@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pokemon App</string>
+    <string name="detail_text_description">Detail</string>
+    <string name="nom_poke">Name :</string>
+    <string name="poids_poke">Weight :</string>
+    <string name="taille_poke">Size :</string>
+</resources>

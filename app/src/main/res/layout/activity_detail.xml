@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".presentation.view.mainActivity">
+
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="274dp"
+       android:layout_height="129dp"
+       android:contentDescription="logo pokedex"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.496"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.058"
+       app:srcCompat="@drawable/logo_pokedex" />
+
+   <TextView
+       android:id="@+id/nom"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/nom_poke"
+       android:textColor="@android:color/white"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/imageView"
+       app:layout_constraintVertical_bias="0.193" />
+
+   <TextView
+       android:id="@+id/poids"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/poids_poke"
+       android:textColor="@android:color/white"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/taille"
+       app:layout_constraintVertical_bias="0.436" />
+
+   <TextView
+       android:id="@+id/taille"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/taille_poke"
+       android:textColor="@android:color/white"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/nom"
+       app:layout_constraintVertical_bias="0.261" />
+
+   <TextView
+       android:id="@+id/namePokemon"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="TextView"
+       android:textColor="#E69898"
+       android:textSize="16sp"
+       android:textStyle="bold|italic"
+       app:layout_constraintBottom_toTopOf="@+id/taille"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/imageView"
+       app:layout_constraintVertical_bias="0.674" />
+
+   <TextView
+       android:id="@+id/heightPokemon"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="TextView"
+       android:textColor="#E69898"
+       android:textSize="16sp"
+       android:textStyle="bold|italic"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/taille"
+       app:layout_constraintVertical_bias="0.066" />
+
+   <TextView
+       android:id="@+id/weightPokemon"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="TextView"
+       android:textColor="#E69898"
+       android:textSize="16sp"
+       android:textStyle="bold|italic"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/poids"
+       app:layout_constraintVertical_bias="0.085" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
